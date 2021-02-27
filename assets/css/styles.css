@@ -1,11 +1,32 @@
-.list-item:first-child {
-  background-color: aqua;
+:root{
+  --border-size:3px;
+  --border-style:solid;
+  --border-color:darkblue;
+  --main-background-color:bisque;
 }
 
-.list-item:last-child {
-  background-color: gold;
+table{
+  width: 100%;
+  border-spacing: 0px;
+  border:var(--border-size) var(--border-style) var(--border-color);
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.list-item:nth-child(2n){
-  background-color: brown;
+th + th,td +td {
+border-left: var(--border-size) var(--border-style) var(--border-color);
+
+} 
+th,td{
+  border-bottom:  var(--border-size) var(--border-style) var(--border-color);
+  background-color:var(--main-background-color);
+}
+
+tr:last-child td{
+  border-bottom: unset;
+}
+
+.wrapper{
+  margin-top: 50px;
+  background-color:var(--main-background-color);
 }
