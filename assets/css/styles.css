@@ -1,0 +1,36 @@
+.web-link {
+  display: inline-block;
+  text-decoration: none;
+  background-color: dodgerblue;
+  color: white;
+  padding: 10px 15px;
+
+}
+
+.link-list li ~ li {
+  margin-top: 20px;
+}
+
+.web-link:link {
+  color: cyan;
+  background-color: darkmagenta;
+}
+
+
+.web-link:visited {
+  color:brown;
+  background-color: darkcyan;
+}
+
+.web-link:hover:not(button) {
+  background-color: orange;
+}
+
+.web-link:active {
+  background-color: red !important;
+  color: wheat !important;
+}
+
+.container:hover {
+  background-color: rgb(206, 21, 21);
+}
